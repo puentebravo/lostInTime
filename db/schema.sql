@@ -14,7 +14,7 @@ CREATE TRIGGER before_insert_posts
 BEFORE INSERT ON posts
 FOR EACH ROW 
 BEGIN 
-	if new.ID IS NULL THEN
+	if new.ID IS null THEN
      SET new.ID = uuid();
 	END IF;
 END
