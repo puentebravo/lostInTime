@@ -2,10 +2,11 @@ import React from "react";
 import Footer from "../../components/footer";
 import LeadCard from "../../components/leadCard";
 import Navbar from "../../components/navBar";
+import "./home.css"
 
 function Home() {
     return (
-        <div>
+        <div id="home">
             <Navbar />
             <LeadCard />
             <Footer />
