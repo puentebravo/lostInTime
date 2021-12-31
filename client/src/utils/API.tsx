@@ -1,11 +1,15 @@
 import axios from "axios";
 
-const getPosts = function() {
+const getPosts = function () {
     return axios.get("/api/getPosts")
 }
 
-const getTag = function() {
+const getTag = function () {
     return axios.get("/api/getPosts/:tag")
 }
 
-export {getPosts, getTag} 
+const getAllTags = function () {
+    return axios.get("/api/getPosts/tags")
+}
+
+export { getPosts, getTag, getAllTags } 
