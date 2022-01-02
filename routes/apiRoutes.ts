@@ -9,3 +9,14 @@ router.get("/api/getPosts", (req: Request, res: Response) => {
     res.json(allPosts);
   });
 });
+
+
+router.get("/api/getPosts/:tag", (req: Request, res: Response) => {
+  prisma.posts.findMany({
+    where: {
+      tags: {
+        equals: req.params.tag
+      }
+    }
+  })
+})
