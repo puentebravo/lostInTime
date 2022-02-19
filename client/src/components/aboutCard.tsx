@@ -14,18 +14,15 @@ function AboutCard() {
             className="rounded-full border-2 mt-3"
           />
         </div>
-        <h1 className="text-lg text-center text-white">About Us</h1>
+        <h1 className="text-lg text-center text-white">Who are we?</h1>
         <p className="text-white pt-2">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni
-          voluptatum temporibus illo dolore qui busdam beatae vitae perferendis
-          quisquam facilis, ab rem aspernatur accusantium eos natus similique
-          eius a inventore tempora. Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Rem et incidunt ab sapiente magni eaque harum,
-          dignissimos modi obcaecati doloribus ad iste ducimus reiciendis
-          possimus quo corporis quia fuga? Quidem. Lorem ipsum dolor sit amet
-          consectetur, adipisicing elit. Facilis, corrupti? Reiciendis enim
-          laborum aut quam neque provident molestias? Quos, dolor doloremque
-          iste cum ea ex possimus porro facere omnis nihil?
+          We're Maya and Charlie, a pair of lifelong wanderers who love nothing
+          more than finding out what's over the next horizon. Through our
+          journeys, we realized we'd gravitated to places in danger of
+          disappearing. From the sinking city of Venice to the isles of the
+          Galapagos, we love seeing most the places that may soon vanish. So
+          whether we're journeying throughout the wide world ourselves, or
+          experiencing new cultures through food, thanks for joining us for the ride!
         </p>
       </div>
     </div>
