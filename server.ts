@@ -1,6 +1,7 @@
 import { Request, Response } from "express";
 import { PrismaClient } from "@prisma/client";
 
+
 const express = require("express");
 const path = require("path");
 const PORT = process.env.PORT || 3001;
@@ -30,7 +31,9 @@ app.get("/getPosts/:tag", async (req: Request, res: Response) => {
     },
   });
 
+  
   res.json(taggedPosts);
+  console.log(`Route reached with ${req.params.tag}`)
 });
 
 app.get("*", function (req: Request, res: Response) {
