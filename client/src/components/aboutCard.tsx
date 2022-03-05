@@ -15,7 +15,7 @@ function AboutCard() {
           />
         </div>
         <h1 className="text-lg text-center text-white">Who are we?</h1>
-        <p className="text-white pt-2">
+        <p className="text-white pt-4 pb-4 px-4">
           We're Maya and Charlie, a pair of lifelong wanderers who love nothing
           more than finding out what's over the next horizon. Through our
           journeys, we realized we'd gravitated to places in danger of
