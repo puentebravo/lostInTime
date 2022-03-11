@@ -2,11 +2,12 @@ import React from "react";
 import ContactCard from "../../components/contactCard";
 import Footer from "../../components/footer";
 import NavBar from "../../components/navBar";
+import "./contact.css";
 
 
 function Contact() {
     return (
-        <div>
+        <div id="contact">
             <NavBar />
             <ContactCard/>
             <Footer />
