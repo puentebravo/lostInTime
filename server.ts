@@ -30,11 +30,21 @@ app.get("/getPosts/:tag", async (req: Request, res: Response) => {
       },
     },
   });
-
   
   res.json(taggedPosts);
   console.log(`Route reached with ${req.params.tag}`)
 });
+
+app.get("/getPosts/tags", async (req: Request, res: Response) => {
+  const allTags = await prisma.posts.findMany({
+    select: {
+      tags: true
+    }
+  })
+
+  res.json(allTags);
+  console.log("Route Reached.")
+})
 
 app.get("*", function (req: Request, res: Response) {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
