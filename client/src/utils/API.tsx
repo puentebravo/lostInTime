@@ -1,7 +1,13 @@
 import axios from "axios";
 
+interface Post {
+    ID: string,
+    content: string,
+    tags: string,
+  }
+
 const getPosts = function () {
-    return axios.get("/api/getPosts")
+    return axios.get<Post[]>("/api/getPosts")
 }
 
 const getTag = function () {
