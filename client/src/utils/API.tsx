@@ -11,7 +11,7 @@ const getPosts = function () {
 }
 
 const getTag = function () {
-    return axios.get("/api/getPosts/:tag")
+    return axios.get<Post[]>("/api/getPosts/:tag")
 }
 
 const getAllTags = function () {
