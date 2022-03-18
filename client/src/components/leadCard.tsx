@@ -4,13 +4,12 @@ function LeadCard() {
   return (
     <div className="min-h-screen">
       <div className="container mx-auto mt-8 max-h-full bg-gray-600 bg-opacity-90 border-2 border-solid border-yellow-400 rounded shadow-lg max-w-3xl min-w-min">
-        <h1 className="text-lg text-center text-white">This is test content</h1>
         <img
           src="..."
           width="300px"
           height="300px"
           alt="Test Block"
-          className="mx-auto rounded-lg border-2"
+          className="mx-auto rounded-lg border-2 drop-shadow-xl shadow-xl mt-8"
         />
         <p className="text-white pt-4 pb-4 px-4">
           Oh, king eh? Very nice. And how'd you get that, eh? By exploiting the
