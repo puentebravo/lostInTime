@@ -1,14 +1,15 @@
 import React from "react";
+import leadImg from "../assets/leadImg.jpg";
 
 function LeadCard() {
   return (
     <div className="min-h-screen">
       <div className="container mx-auto mt-8 max-h-full bg-gray-600 bg-opacity-90 border-2 border-solid border-yellow-400 rounded shadow-lg max-w-3xl min-w-min">
         <img
-          src="..."
+          src={leadImg}
           width="300px"
           height="300px"
-          alt="Test Block"
+          alt="A sea lion basking on a Galapagos beach"
           className="mx-auto rounded-lg border-2 drop-shadow-xl shadow-xl mt-8"
         />
         <p className="text-white pt-4 pb-4 px-4">
