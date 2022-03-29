@@ -11,7 +11,7 @@ function AboutCard() {
             width="300px"
             height="300px"
             alt="Charlie and Maya"
-            className="rounded-full border-2 mt-3"
+            className="rounded-full border-2 mt-3 drop-shadow-xl"
           />
         </div>
         <h1 className="text-lg text-center text-white">Who are we?</h1>
