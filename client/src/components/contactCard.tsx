@@ -3,7 +3,7 @@ import React from "react";
 function ContactCard() {
   return (
     <main className="min-h-screen">
-      <section className="container mx-auto mt-10 max-h-full bg-gray-600 bg-opacity-90 border-2 border-solid border-yellow-400 rounded shadow-lg max-w-3xl min-w-min">
+      <section className="container mx-auto mt-10 max-h-full bg-gray-600 bg-opacity-90 border-2 border-solid border-black rounded-xl shadow-lg max-w-3xl min-w-min">
         <h1 className="text-xl text-center text-white mb-8 mt-4 pb-4 border-b-2 border-double">
           Follow our adventures!
         </h1>

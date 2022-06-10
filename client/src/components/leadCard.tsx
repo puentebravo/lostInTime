@@ -4,7 +4,7 @@ import leadImg from "../assets/leadImg.jpg";
 function LeadCard() {
   return (
     <div className="min-h-screen">
-      <div className="container mx-auto mt-8 max-h-full bg-gray-600 bg-opacity-90 border-2 border-solid border-yellow-400 rounded shadow-lg max-w-3xl min-w-min">
+      <div className="container mx-auto mt-8 max-h-full bg-gray-600 bg-opacity-90 border-2 border-solid border-black rounded-xl shadow-lg max-w-3xl min-w-min">
         <img
           src={leadImg}
           width="300px"
