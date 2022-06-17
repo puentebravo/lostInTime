@@ -8,7 +8,7 @@ datasource db {
 }
 
 model posts {
-  ID      String  @id @unique(map: "ID") @default(uuid()) @db.Char(36)
+  ID      String  @id @unique @default(uuid())
   title   String  @db.VarChar(50)
   content String  @db.LongText
   tags    String? @db.VarChar(20)
