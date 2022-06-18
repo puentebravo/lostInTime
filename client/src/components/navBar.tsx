@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function NavBar() {
     return (
-        <div className="container mx-auto h-auto position: sticky top-0 bg-yellow-500">
+        <div className="container mx-auto h-auto position: sticky top-0 bg-yellow-500 drop-shadow-2xl border-b-4 border-black">
             <p className="text-center text-3xl">Lost in Time</p>
             <div className="grid grid-cols-4 justify-center">
                 <Link to="/"><div className="transition duration-300 ease-in-out hover:bg-gray-800 hover:text-white text-center">Home</div></Link>
