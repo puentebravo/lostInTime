@@ -1,7 +1,7 @@
 import React from "react"
 import BlogContainer from "../../components/blogContainer"
 import Footer from "../../components/footer"
-import NavBar from "../../components/navBar"
+import NavBar from "../../components/navBar/navBar"
 
 // For this page, you'll need to track state in at least one component, if not more. Things you'll need: 
 // a container to actually hold the blog posts. 

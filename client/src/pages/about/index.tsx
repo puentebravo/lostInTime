@@ -1,7 +1,7 @@
 import React from "react";
 import AboutCard from "../../components/aboutCard";
 import Footer from "../../components/footer";
-import NavBar from "../../components/navBar";
+import NavBar from "../../components/navBar/navBar";
 import "./about.css"
 
 function About() {
