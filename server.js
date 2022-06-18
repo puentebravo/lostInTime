@@ -47,7 +47,7 @@ app.use(express.json());
 if (process.env.NODE_ENV === "production") {
     app.use(express.static("./client/public"));
 }
-app.get("/getPosts", function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
+app.get("/api/getPosts", function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
     var posts;
     return __generator(this, function (_a) {
         switch (_a.label) {
@@ -60,7 +60,7 @@ app.get("/getPosts", function (req, res) { return __awaiter(void 0, void 0, void
         }
     });
 }); });
-app.get("/getPosts/:tag", function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
+app.get("/api/getPosts/:tag", function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
     var taggedPosts;
     return __generator(this, function (_a) {
         switch (_a.label) {
@@ -74,6 +74,25 @@ app.get("/getPosts/:tag", function (req, res) { return __awaiter(void 0, void 0,
             case 1:
                 taggedPosts = _a.sent();
                 res.json(taggedPosts);
+                console.log("Route reached with " + req.params.tag);
+                return [2 /*return*/];
+        }
+    });
+}); });
+app.get("/api/getPosts/allTags", function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
+    var allTags;
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0: return [4 /*yield*/, prisma.posts.findMany({
+                    select: {
+                        ID: true,
+                        tags: true
+                    }
+                })];
+            case 1:
+                allTags = _a.sent();
+                res.json(allTags);
+                console.log("Route Reached: all tags.");
                 return [2 /*return*/];
         }
     });

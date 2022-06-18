@@ -15,14 +15,14 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("./client/public"));
 }
 
-app.get("/getPosts", async (req: Request, res: Response) => {
+app.get("/api/getPosts", async (req: Request, res: Response) => {
   const posts = await prisma.posts.findMany();
 
   res.json(posts);
   console.log("Route reached.")
 });
 
-app.get("/getPosts/:tag", async (req: Request, res: Response) => {
+app.get("/api/getPosts/:tag", async (req: Request, res: Response) => {
   const taggedPosts = await prisma.posts.findMany({
     where: {
       tags: {
@@ -35,15 +35,16 @@ app.get("/getPosts/:tag", async (req: Request, res: Response) => {
   console.log(`Route reached with ${req.params.tag}`)
 });
 
-app.get("/getPosts/tags", async (req: Request, res: Response) => {
+app.get("/api/getPosts/allTags", async (req: Request, res: Response) => {
   const allTags = await prisma.posts.findMany({
     select: {
+      ID: true,
       tags: true
     }
   })
 
   res.json(allTags);
-  console.log("Route Reached.")
+  console.log("Route Reached: all tags.")
 })
 
 app.get("*", function (req: Request, res: Response) {
