@@ -10,7 +10,7 @@ function LeadCard() {
           width="300px"
           height="300px"
           alt="A sea lion basking on a Galapagos beach"
-          className="mx-auto rounded-lg border-2 drop-shadow-xl shadow-xl mt-8"
+          className="mx-auto rounded-full border-2 drop-shadow-xl shadow-xl mt-8"
         />
         <p className="text-white pt-4 pb-4 px-4">
         While touring throughout the US and Europe as a singer, song-writer, and musician, I came to view things from outside of the (shoe) box that we live in. There’s a world beyond square footage. Life doesn’t have limitations, or does it?
