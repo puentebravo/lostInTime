@@ -10,6 +10,6 @@ datasource db {
 model posts {
   ID      String  @id @unique @default(uuid())
   title   String  @db.VarChar(50)
-  content String  @db.LongText
+  route   String  @db.VarChar(10)
   tags    String? @db.VarChar(20)
 }
