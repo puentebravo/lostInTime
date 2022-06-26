@@ -21,7 +21,11 @@ module.exports = {
       "3xl": "2560px",
       // => @media (min-width: 2560px) { ... }
     },
-    extend: {},
+    extend: { 
+        fontFamily: {
+          cursive: ['"Cinzel Decorative"', "cursive"],
+      },
+    },
   },
   variants: {
     extend: {},
