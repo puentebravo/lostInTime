@@ -3,16 +3,18 @@ import axios from "axios";
 
 interface Post {
     ID: string,
+    title: string
     content: string,
     tags: string,
 }
 
-const getPosts = function () {
-    return axios.get<Post[]>("/api/getPosts")
+const getPosts = async function () {
+    const response = await axios.get<Post[]>("/api/getPosts")
+    return response
 }
 
 const getTag = function () {
-    return axios.get<Post[]>("/api/getPosts/:tag")
+    return axios.get("/api/getPosts/:tag")
 }
 
 const getAllTags = function () {
