@@ -2,10 +2,10 @@
   "name": "lostintime",
   "version": "1.0.0",
   "description": "A custom website for a travel blog",
-  "main": "server.js",
+  "main": "server.ts",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-    "start:prod": "node server.ts",
+    "start:prod": "ts-node server.ts",
     "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
     "client": "cd client && npm run start",
     "seed": "node scripts/seedDB.js",
@@ -38,6 +38,7 @@
     "nodemon": "^1.18.7",
     "postcss": "^8.4.12",
     "prisma": "^3.10.0",
+    "ts-node": "^10.9.1",
     "typescript": "^4.4.3"
   }
 }
