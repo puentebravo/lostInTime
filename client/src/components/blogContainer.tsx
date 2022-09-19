@@ -16,7 +16,7 @@ function BlogContainer() {
 
     return (
         <div className="min-h-screen">
-            <section className="container mx-auto mt-8 max-h-full bg-gray-600 bg-opacity-90 border-2 border-solid border-black rounded-xl shadow-lg max-w-3xl min-w-min">
+            <section className="container mx-auto mt-8 max-h-full max-w-3xl min-w-min">
                 {posts.map((post) => (
                     <div key={post.ID}>
                     <BlogCard ID={post.ID} title={post.title} content={post.content} tags={post.tags} />
