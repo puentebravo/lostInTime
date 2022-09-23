@@ -3,7 +3,7 @@ import { Post } from "../utils/API";
 
 function BlogCard(props: Post) {
     return (
-        <div className="container">
+        <div className="container" id={props.ID}>
             <div className="container mx-auto mt-8 max-h-full bg-gray-600 bg-opacity-90 border-2 border-solid border-black  shadow-lg max-w-3xl min-w-min">
                 <div className="flex justify-center">
                     <h1 className="text-center text-lg text-white">{props.title}</h1>
