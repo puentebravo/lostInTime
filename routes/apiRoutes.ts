@@ -48,6 +48,20 @@ router.post("/api/savePost", async (req: Request, res: Response) => {
   res.json(newPost);
 });
 
+router.delete("api/deletePost/:ID", async (req: Request, res: Response) => {
+
+  
+  const delPost = await prisma.posts.delete({
+    where: {
+      ID: req.params.ID
+    }
+  })
+
+  console.log("route reached: delete", req.params.ID)
+
+  res.json(delPost)
+})
+
 
 
 module.exports = router;
